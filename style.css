@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Domine&family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url(images/pexels-pixabay-208745.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+header  {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    opacity: 70%;
+    backdrop-filter: blur(20px); 
+    background-color: rgb(46, 44, 44);
+    box-shadow: 1px 1px 5px rgb(44, 44, 214);
+  
+}
+header  nav {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+img {
+    width: 80px;
+    min-height: 50px;
+    display: flex;
+    margin-right: auto;
+    border-radius: 50%;
+    padding: 20px 10px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(237, 238, 247);
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-weight: bold;
+
+
+}
+
+nav a:hover {
+    color: rgb(233, 226, 226);
+    
+    background-color: rgb(9, 81, 145);
+    border-radius: 50%;
+       
+}  
+
+
+main {
+     padding-top: 120px; 
+       
+}
+
+/* Round ball in the middle */
+
+.ball-block {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    
+   
+
+}
+
+.spiner {
+    background-color: orangered;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 25px solid white;
+    border-top: 20px solid rgb(9, 81, 145);
+    animation: ani 2.5s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+   
+@keyframes ani {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.cover-slide {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.slide {
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: 5s slide linear infinite;
+
+}
+
+@keyframes slide {
+    0%{
+        
+        background-color: blue;
+    } 25%{
+        border-radius: 10%;
+        background-color: blue;
+    } 50%{
+        border-radius: 25%;
+        border: 10px solid red;
+        
+    } 75%{
+        border-radius: 38%;
+        border: 15px solid red;
+
+    } 100% {
+        border-radius: 50%;
+        border: 20px solid red;
+    }
+}
+
+
+
+
+    
+
+
+
+
+
