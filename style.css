@@ -120,7 +120,7 @@ main {
 .slide {
     width: 200px;
     height: 200px;
-    border: 2px solid red;
+    border: 25px solid white;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -129,26 +129,33 @@ main {
 
 }
 
-@keyframes slide {
+
+
+ @keyframes slide {
     0%{
         
-        background-color: blue;
+        background-color: orangered;
     } 25%{
         border-radius: 10%;
-        background-color: blue;
+        background-color: orangered;
     } 50%{
         border-radius: 25%;
-        border: 10px solid red;
+        border: 10px solid white;
+        background-color: orangered;
         
     } 75%{
         border-radius: 38%;
-        border: 15px solid red;
+        border: 20px solid white;
+        background-color: orangered;
+        
+        
 
     } 100% {
         border-radius: 50%;
-        border: 20px solid red;
+        border: 30px solid white;
+        background-color: orangered;
     }
-}
+} 
 
 
 
